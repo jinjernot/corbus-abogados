@@ -23,12 +23,12 @@ function Home() {
         <HeroHome />
         <FeaturesHome />
         <FeaturesBlocks />
-        <Testimonials />
+{/*         <Testimonials />
         <Newsletter />
-
+ */}
       </main>
 
-      <Banner />
+{/*       <Banner /> */}
 
       {/*  Site footer */}
       <Footer />
