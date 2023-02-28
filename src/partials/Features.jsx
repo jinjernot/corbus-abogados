@@ -33,8 +33,8 @@ function Features() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h2 mb-4">Algun texto</h1>
-            <p className="text-xl text-gray-600">Paja</p>
+            <h1 className="h2 mb-4">Titulo</h1>
+            <p className="text-xl text-gray-600">Descripcion</p>
           </div>
 
           {/* Section content */}

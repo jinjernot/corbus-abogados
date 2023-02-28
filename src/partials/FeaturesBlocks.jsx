@@ -14,7 +14,7 @@ function FeaturesBlocks() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
             <h2 className="h2 mb-4">Nuestros servicios</h2>
-            <p className="text-xl text-gray-600">Pajita</p>
+            <p className="text-xl text-gray-600">Descripcion</p>
           </div>
 
           {/* Items */}

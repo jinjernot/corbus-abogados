@@ -26,9 +26,9 @@ function Footer() {
                 </svg>
               </Link>
             </div>
-            <div className="text-sm text-gray-600">
+{/*             <div className="text-sm text-gray-600">
               <Link to="#" className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">Terms</Link> · <Link to="#" className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">Privacy Policy</Link>
-            </div>
+            </div> */}
           </div>
 
           {/* 2nd block */}
@@ -127,7 +127,7 @@ function Footer() {
         <div className="md:flex md:items-center md:justify-between py-4 md:py-8 border-t border-gray-200">
 
           {/* Social links */}
-          <ul className="flex mb-4 md:order-1 md:ml-4 md:mb-0">
+{/*           <ul className="flex mb-4 md:order-1 md:ml-4 md:mb-0">
             <li>
               <Link to="#" className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out" aria-label="Twitter">
                 <svg className="w-8 h-8 fill-current" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
@@ -150,9 +150,9 @@ function Footer() {
               </Link>
             </li>
           </ul>
-
+ */}
           {/* Copyrights note */}
-          <div className="text-sm text-gray-600 mr-4">Made by <a className="text-blue-600 hover:underline" href="https://cruip.com/">Cruip</a>. All rights reserved.</div>
+          <div className="text-sm text-gray-600 mr-4">Powered by: <a className="text-blue-600 hover:underline" href="https://www.sabarobestudios.io/" target="_blank">Sabarobe Studios</a></div>
 
         </div>
 
