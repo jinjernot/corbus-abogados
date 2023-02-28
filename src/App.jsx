@@ -1,39 +1,49 @@
-import React, { useState, useEffect } from "react";
-import { Navigation } from "./components/navigation";
-import { Header } from "./components/header";
-import { About } from "./components/about";
-import { Services } from "./components/services";
-import { Testimonials } from "./components/testimonials";
-import { Team } from "./components/Team";
-import { Contact } from "./components/contact";
-import JsonData from "./data/data.json";
-import SmoothScroll from "smooth-scroll";
-import "./App.css";
+import React, { useEffect } from 'react';
+import {
+  Routes,
+  Route,
+  useLocation
+} from 'react-router-dom';
 
-export const scroll = new SmoothScroll('a[href*="#"]', {
-  speed: 1000,
-  speedAsDuration: true,
-});
+import 'aos/dist/aos.css';
+import './css/style.css';
 
-const App = () => {
-  const [landingPageData, setLandingPageData] = useState({});
+import AOS from 'aos';
+
+import Home from './pages/Home';
+import SignIn from './pages/SignIn';
+import SignUp from './pages/SignUp';
+import ResetPassword from './pages/ResetPassword';
+
+function App() {
+
+  const location = useLocation();
+
   useEffect(() => {
-    setLandingPageData(JsonData);
-  }, []);
+    AOS.init({
+      once: true,
+      disable: 'phone',
+      duration: 700,
+      easing: 'ease-out-cubic',
+    });
+  });
+
+  useEffect(() => {
+    document.querySelector('html').style.scrollBehavior = 'auto'
+    window.scroll({ top: 0 })
+    document.querySelector('html').style.scrollBehavior = ''
+  }, [location.pathname]); // triggered on route change
 
   return (
-    <div>
-      <Navigation />
-      <Header data={landingPageData.Header} />
-{/*       <Features data={landingPageData.Features} /> */}
-      <About data={landingPageData.About} />
-      <Services data={landingPageData.Services} />
-{/*       <Gallery data={landingPageData.Gallery} /> */}
-      <Testimonials data={landingPageData.Testimonials} />
-      <Team data={landingPageData.Team} />
-      <Contact data={landingPageData.Contact} />
-    </div>
+    <>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/signin" element={<SignIn />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/reset-password" element={<ResetPassword />} />
+      </Routes>
+    </>
   );
-};
+}
 
 export default App;
