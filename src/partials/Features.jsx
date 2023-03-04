@@ -33,8 +33,8 @@ function Features() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h2 mb-4">Titulo</h1>
-            <p className="text-xl text-gray-600">Descripcion</p>
+            <h1 className="h2 mb-4">Nuestra Misión</h1>
+            <p className="text-xl text-gray-600">Grupo selecto de profesionales que proporciona atención especializada, personalizada y de calidad a cada uno de nuestros clientes.</p>
           </div>
 
           {/* Section content */}
@@ -54,8 +54,8 @@ function Features() {
                   onClick={(e) => { e.preventDefault(); setTab(1); }}
                 >
                   <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">Mision</div>
-                    <div className="text-gray-600">Descripcion</div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">Honestidad</div>
+                    <div className="text-gray-600">Siendo uno de los primordiales principios éticos que sirve como pilar de nuestro quehacer diario, la honestidad rige no solo nuestra relación Abogado-Cliente, sino también la relación entre nuestro equipo, pues estamos convencidos en que la vida dentro de la firma es y será el reflejo para mantener nuestro prestigio.</div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
                     <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -69,8 +69,8 @@ function Features() {
                   onClick={(e) => { e.preventDefault(); setTab(2); }}
                 >
                   <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">Vision</div>
-                    <div className="text-gray-600">Descripcion</div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">Transparencia</div>
+                    <div className="text-gray-600">Como consecuencia de la honestidad que nos tutela, la transparencia forma parte también de nuestra actividad profesional, brindando una total seguridad sobre la veracidad de los servicios que ofrecemos.</div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
                     <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -84,8 +84,8 @@ function Features() {
                   onClick={(e) => { e.preventDefault(); setTab(3); }}
                 >
                   <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">Valores</div>
-                    <div className="text-gray-600">Descripcion</div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">Eficiencia</div>
+                    <div className="text-gray-600">La relación con todos nuestros clientes está basada en la confianza y empatía, lo que nos permite proporcionar eficazmente nuestros servicios.</div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
                     <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
